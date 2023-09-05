@@ -19,10 +19,17 @@ function ligarCarro() {
         carroLigado = true
     }
 }
+function desligarCarro() {
+    if (carroLigado == true) {
+        carroLigado = false
+    }
+}
 
 function aumentarMarcha() {
     if (marcha < 5) {
-        marcha = marcha + 1
+        if (carroLigado == true) {
+            marcha = marcha + 1
+        }
     }
 }
 function reduzirMarcha() {
@@ -30,22 +37,34 @@ function reduzirMarcha() {
         marcha = marcha - 1
     }
 }
-function aumentarVelocidade() {
+function acelerar() {
     if (carroLigado == true) {
         if (marcha > 0) {
             velocidade = velocidade + marcha * 10
         }
     }
 }
-function reduzirVelocidade() {
+function frear() {
     if (velocidade > 0) {
-        velocidade = velocidade - 10
+        velocidade = velocidade - 5
     }
 }
 
 let velocidade = 0
 let carroLigado = false
 let marcha = 0
+for(let contador = 0; contador < 10; contador = contador + 1){
+    
+}
 const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
-
+if (opcaoUsuario == 1) {
+    ligarCarro()
+} else if (opcaoUsuario == 2) {
+    desligarCarro()
+} else if (opcaoUsuario == 3) {
+    aumentarMarcha()
+}
+console.log(carroLigado)
+console.log(velocidade)
+console.log(marcha)
 
