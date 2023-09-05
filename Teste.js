@@ -15,37 +15,37 @@ const prompt = require('prompt-sync')();
 // COMO FUNCIONA UM FOR
 //for(let contador = 0; contador < numeroDeExecucoes; contador = contador + 1) {}
 function ligarCarro() {
-if (carroLigado == false){
- carroLigado = true
-} 
+    if (carroLigado == false) {
+        carroLigado = true
+    }
 }
 
-function aumentarMarcha(){
-if (marcha < 5 ){
- marcha = marcha + 1    
-} 
-}
-function reduzirMarcha(){
-    if (marcha > 0 ){
-     marcha = marcha - 1
+function aumentarMarcha() {
+    if (marcha < 5) {
+        marcha = marcha + 1
     }
-}    
-function aumentarVelocidade(){
-    if (carroLigado == true){
-        if(marcha > 0){
-        velocidade = velocidade + marcha * 10
+}
+function reduzirMarcha() {
+    if (marcha > 0) {
+        marcha = marcha - 1
+    }
+}
+function aumentarVelocidade() {
+    if (carroLigado == true) {
+        if (marcha > 0) {
+            velocidade = velocidade + marcha * 10
         }
     }
 }
-function reduzirVelocidade(){
-    if (velocidade > 0){
+function reduzirVelocidade() {
+    if (velocidade > 0) {
         velocidade = velocidade - 10
-      }
     }
+}
 
 let velocidade = 0
 let carroLigado = false
 let marcha = 0
-//const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
+const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
 
 
