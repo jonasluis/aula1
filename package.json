@@ -4,7 +4,8 @@
   "description": "",
   "main": "Teste.js",
   "scripts": {
-    "start": "node Teste.js",
+    "mercado": "node mercado.js",
+    "carro": "node carro.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
