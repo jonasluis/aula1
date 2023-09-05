@@ -62,6 +62,12 @@ if (opcaoUsuario == 1) {
     desligarCarro()
 } else if (opcaoUsuario == 3) {
     aumentarMarcha()
+} else if (opcaoUsuario == 4 ){
+    reduzirMarcha()
+}  else if (opcaoUsuario == 5) {
+    acelerar()
+}  else if (opcaoUsuario == 6) {
+    frear()
 }
 }
 
