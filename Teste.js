@@ -39,7 +39,6 @@ function aumentarVelocidade(){
 }
 function reduzirVelocidade(){
     if (velocidade > 0){
-        
         velocidade = velocidade - 10
       }
     }
