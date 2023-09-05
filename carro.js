@@ -53,10 +53,9 @@ function frear() {
 let velocidade = 0
 let carroLigado = false
 let marcha = 0
-for(let contador = 0; contador < 10; contador = contador + 1){
-    
-}
-const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
+const repeticoes = parseInt(prompt("escolha o numero de repeticoes:"))
+for(let contador = 0; contador == repeticoes; contador = contador + 1){
+    const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
 if (opcaoUsuario == 1) {
     ligarCarro()
 } else if (opcaoUsuario == 2) {
@@ -64,6 +63,8 @@ if (opcaoUsuario == 1) {
 } else if (opcaoUsuario == 3) {
     aumentarMarcha()
 }
+}
+
 console.log(carroLigado)
 console.log(velocidade)
 console.log(marcha)
