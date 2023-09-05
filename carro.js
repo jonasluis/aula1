@@ -54,7 +54,7 @@ let velocidade = 0
 let carroLigado = false
 let marcha = 0
 const repeticoes = parseInt(prompt("escolha o numero de repeticoes:"))
-for(let contador = 0; contador == repeticoes; contador = contador + 1){
+for(let contador = 0; contador < repeticoes; contador = contador + 1 ){
     const opcaoUsuario = parseInt(prompt("escolha uma opcao:"))
 if (opcaoUsuario == 1) {
     ligarCarro()
