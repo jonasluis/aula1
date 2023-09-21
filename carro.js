@@ -68,10 +68,8 @@ if (opcaoUsuario == 1) {
     acelerar()
 }  else if (opcaoUsuario == 6) {
     frear()
-}
-}
-
+} 
 console.log(carroLigado)
 console.log(velocidade)
 console.log(marcha)
-
+}
