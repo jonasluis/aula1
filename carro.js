@@ -70,7 +70,7 @@ if (opcaoUsuario == 1) {
 }  else if (opcaoUsuario == 6) {
     frear()
 } 
-console.log(carroLigado)
-console.log(velocidade)
-console.log(marcha)
+console.log("O carro está ligado ?" + carroLigado)
+console.log("Velocidade do carro: " + velocidade + " km/h.")
+console.log("Marcha do carro: " + marcha + ".")
 }
