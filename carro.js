@@ -16,6 +16,7 @@ const prompt = require('prompt-sync')();
 //for(let contador = 0; contador < numeroDeExecucoes; contador = contador + 1) {}
 function ligarCarro() {
     if (carroLigado == false) {
+       
         carroLigado = true
     }
 }

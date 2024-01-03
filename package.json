@@ -6,6 +6,7 @@
   "scripts": {
     "mercado": "node mercado.js",
     "carro": "node carro.js",
+    "media": "node media.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
